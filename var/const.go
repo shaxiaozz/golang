@@ -10,16 +10,17 @@ const (
 	GENDER = "男"
 )
 
+//定义枚举(枚举的意思即为：列举，将所有的情况都列举出来)
+const (
+	A = iota
+	B
+	C
+)
+
 func main() {
 	//格式化输出常量
 	fmt.Print("姓名: ", NAME, "\n", "年龄: ", AGE, "\n", "身高: ", HIGHT, "\n", "性别: ", GENDER, "\n")
 
-	//定义枚举(枚举的意思即为：列举，将所有的情况都列举出来)
-	const (
-		A = iota
-		B
-		C
-	)
 	//输出枚举
 	fmt.Println(A, B, C)
 }
